@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>先選你的用車需求</title>
+<style>
+:root{
+  --bg:#070707; --panel:#141417; --line:#30333b; --gold:#d7b04a; --gold2:#f5dda0; --gold3:#fff4cf; --text:#f7f2e8; --muted:#c9bea7;
+}
+*{box-sizing:border-box}
+body{
+  margin:0;background:radial-gradient(circle at top,#1a1a1a 0%,#0c0c0d 40%,#070707 100%);
+  color:var(--text);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans TC","PingFang TC","Microsoft JhengHei",sans-serif;
+}
+.wrap{max-width:1080px;margin:0 auto;padding:16px 14px 42px}
+.hero,.panel,.choice,.summary{
+  background:linear-gradient(180deg,rgba(255,255,255,.04),rgba(255,255,255,.015));
+  border:1px solid var(--line);border-radius:22px;
+}
+.hero{padding:20px 18px}
+.brand{font-size:13px;color:var(--gold2);font-weight:900;margin-bottom:10px}
+h1{margin:0 0 10px;font-size:38px;line-height:1.12}
+.lead{font-size:17px;line-height:1.95;color:#e8ddc8;margin:0}
+.tags{display:flex;gap:8px;flex-wrap:wrap;margin-top:14px}
+.tag{padding:8px 11px;border-radius:999px;border:1px solid rgba(215,176,74,.35);font-size:13px;color:var(--gold2)}
+.panel{padding:18px;margin-top:14px}
+.secTitle{font-size:29px;font-weight:900;margin:0 0 8px}
+.secSub{font-size:15px;color:var(--muted);line-height:1.9;margin:0 0 16px}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+@media(max-width:860px){
+  h1{font-size:31px}
+  .grid{grid-template-columns:1fr}
+}
+.choice{padding:22px;box-shadow:0 12px 32px rgba(0,0,0,.18)}
+.choice .k{font-size:13px;color:var(--gold2);font-weight:900;margin-bottom:8px}
+.choice .v{font-size:31px;font-weight:900;line-height:1.2;margin-bottom:8px}
+.choice .s{font-size:15px;line-height:1.95;color:#eee2cd}
+.btns{display:flex;gap:10px;flex-wrap:wrap;margin-top:16px}
+.btn{display:inline-block;text-decoration:none;padding:15px 20px;border-radius:16px;font-size:16px;font-weight:900}
+.primary{background:linear-gradient(135deg,#f2d68d,#c8951d);color:#111}
+.secondary{background:#1b1d22;color:var(--text);border:1px solid #3a3d45}
+.summary{
+  margin-top:14px;padding:18px;
+  background:linear-gradient(135deg,rgba(215,176,74,.24),rgba(255,255,255,.04));
+  border:1px solid rgba(255,232,173,.40);
+}
+.summary .t1{font-size:13px;font-weight:900;color:var(--gold3);margin-bottom:8px}
+.summary .t2{font-size:26px;font-weight:900;line-height:1.3;margin-bottom:8px}
+.summary .t3{font-size:16px;line-height:1.95;color:#fff0d1}
+.bullets{margin-top:14px;display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+@media(max-width:860px){.bullets{grid-template-columns:1fr}}
+.bullet{
+  padding:16px;border-radius:18px;background:linear-gradient(135deg,rgba(215,176,74,.12),rgba(255,255,255,.03));
+  border:1px solid rgba(215,176,74,.22)
+}
+.bullet .bh{font-size:22px;font-weight:900;color:#fff5d6;margin-bottom:6px}
+.bullet .bb{font-size:15px;line-height:1.9;color:#eadfc9}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <section class="hero">
+    <div class="brand">CARPLUS 格上租車｜直接給你看的版本｜手機優先｜一頁看懂</div>
+    <h1>你是個人用車，還是企業用車？</h1>
+    <p class="lead">
+      我用最適合你的方式，直接帶你看 <b>現金購入</b>、<b>貸款購入</b>、<b>租賃方案</b> 怎麼差。
+      你不需要一次看完全部，只要先選一個最接近你的情況，我就把重點攤開來給你看。
+    </p>
+    <div class="tags">
+      <div class="tag">先選你的情況</div>
+      <div class="tag">再看三種方式怎麼差</div>
+      <div class="tag">重點不是只看車價</div>
+      <div class="tag">而是看資金怎麼安排</div>
+    </div>
+  </section>
+
+  <section class="panel">
+    <div class="secTitle">先做一個最簡單的選擇</div>
+    <p class="secSub">你不用先研究很多名詞。先選你比較接近哪一種用車需求，我就用最適合你的方式帶你往下看。</p>
+
+    <div class="grid">
+      <div class="choice">
+        <div class="k">個人用車</div>
+        <div class="v">先看自己會不會更輕鬆</div>
+        <div class="s">
+          個人版會先帶你看：
+          <br>今天先拿多少
+          <br>每個月怎麼安排
+          <br>期滿後怎麼看
+          <br>保留下來的現金，還有沒有別的安排空間
+        </div>
+        <div class="btns">
+          <a class="btn primary" href="personal.html">我是個人用車</a>
+        </div>
+      </div>
+
+      <div class="choice">
+        <div class="k">企業用車</div>
+        <div class="v">先看整體安排會不會更有感</div>
+        <div class="s">
+          企業版除了三種方式比較，還會多看：
+          <br>公司戶發票參考
+          <br>公司戶稅務參考
+          <br>現金先留在手上的價值
+          <br>整段時間下來，哪種安排更接近你的需求
+        </div>
+        <div class="btns">
+          <a class="btn primary" href="business.html">我是企業用車</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="summary">
+      <div class="t1">一句話先看懂</div>
+      <div class="t2">如果你重視現金彈性，租賃通常會更有感。</div>
+      <div class="t3">
+        同一台車，真正要看的不是哪個名稱比較好聽，而是：
+        今天先拿多少、整段安排怎麼差、期滿怎麼看，哪一種更接近你的需求。
+      </div>
+    </div>
+
+    <div class="bullets">
+      <div class="bullet">
+        <div class="bh">現金購入</div>
+        <div class="bb">最直接。車直接買下來，但今天先拿的現金通常最多。</div>
+      </div>
+      <div class="bullet">
+        <div class="bh">貸款購入</div>
+        <div class="bb">是折衷方案。今天不用一次拿全部，但每月還款和利息會一路跟著你。</div>
+      </div>
+      <div class="bullet">
+        <div class="bh">租賃方案</div>
+        <div class="bb">更重視安排。今天先拿比較少、後續更好整理，也更適合放回整段用車規劃裡一起看。</div>
+      </div>
+    </div>
+  </section>
+</div>
+</body>
+</html>
