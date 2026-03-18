@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>企業用車怎麼選更適合｜直接看懂現金 vs 貸款 vs 租賃｜5年</title>
+<style>
+:root{
+  --bg:#070707; --panel:#141417; --card:#191b20; --line:#30333b;
+  --gold:#d7b04a; --gold2:#f5dda0; --gold3:#fff4cf; --text:#f7f2e8; --muted:#c9bea7; --green:#97ddb3;
+}
+*{box-sizing:border-box}
+body{
+  margin:0;background:radial-gradient(circle at top,#1a1a1a 0%,#0c0c0d 40%,#070707 100%);
+  color:var(--text);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans TC","PingFang TC","Microsoft JhengHei",sans-serif;
+}
+.wrap{max-width:1120px;margin:0 auto;padding:16px 14px 42px}
+.hero,.panel,.card,.bigBox,.miniBox,.noteBox,.detailBox,.keyCard{
+  background:linear-gradient(180deg,rgba(255,255,255,.04),rgba(255,255,255,.015));
+  border:1px solid var(--line);border-radius:22px;
+}
+.hero{padding:20px 18px}
+.brand{font-size:13px;color:var(--gold2);font-weight:900;margin-bottom:10px}
+h1{margin:0 0 10px;font-size:35px;line-height:1.12}
+.lead{margin:0;color:#e7dcc9;line-height:1.95;font-size:17px}
+.tags{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}
+.tag{padding:8px 11px;border-radius:999px;border:1px solid rgba(215,176,74,.35);font-size:13px;color:var(--gold2)}
+.panel{padding:18px;margin-top:14px}
+.secTitle{font-size:29px;font-weight:900;margin:0 0 8px}
+.secSub{font-size:15px;color:var(--muted);line-height:1.9;margin:0 0 16px}
+.two{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}
+.three{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+.formGrid{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}
+.formGrid3{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+.keyGrid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+@media(max-width:900px){
+  h1{font-size:30px}
+  .two,.three,.formGrid,.formGrid3,.keyGrid{grid-template-columns:1fr}
+}
+.card{padding:16px}
+.card .k{font-size:13px;color:var(--muted);font-weight:900;margin-bottom:8px}
+.card .v{font-size:31px;font-weight:900;line-height:1.12}
+.card .s{font-size:14px;color:#e2d8c6;line-height:1.85;margin-top:8px}
+.bigBox{padding:20px}
+.bigBox h3{margin:0 0 10px;font-size:27px;color:var(--gold2)}
+.bigNum{font-size:44px;font-weight:900;line-height:1.08;margin-bottom:12px}
+.row{display:flex;justify-content:space-between;gap:12px;padding:10px 0;border-bottom:1px solid rgba(255,255,255,.08)}
+.row:last-child{border-bottom:none}
+.row .name{font-size:15px;color:#e7dcc9;line-height:1.55}
+.row .val{font-size:20px;font-weight:900;white-space:nowrap}
+.bigFoot{font-size:14px;color:var(--muted);line-height:1.9;margin-top:12px}
+.summaryBar{
+  margin-top:14px;padding:18px;border-radius:20px;
+  background:linear-gradient(135deg,rgba(215,176,74,.18),rgba(255,255,255,.03));
+  border:1px solid rgba(215,176,74,.28);
+  box-shadow:0 0 0 1px rgba(255,255,255,.03),0 18px 40px rgba(0,0,0,.24);
+}
+.summaryBar.primarySummary{
+  background:linear-gradient(135deg,rgba(215,176,74,.28),rgba(255,255,255,.05));
+  border:1px solid rgba(255,232,173,.46);
+}
+.sumTag{font-size:13px;font-weight:900;color:var(--gold3);margin-bottom:8px}
+.sumTitle{font-size:25px;font-weight:900;line-height:1.3;color:#fff5d6;margin-bottom:8px}
+.sumText{font-size:16px;line-height:1.95;color:#fff0d1}
+.miniBox{padding:18px;background:linear-gradient(135deg,rgba(215,176,74,.16),rgba(255,255,255,.04));box-shadow:0 0 0 1px rgba(215,176,74,.20),0 18px 40px rgba(0,0,0,.25)}
+.miniTitle{font-size:14px;color:var(--gold3);font-weight:900}
+.miniNum{font-size:40px;font-weight:900;line-height:1.05;margin:10px 0}
+.miniText{color:#fff0d1;line-height:1.95;font-size:15px}
+.noteBox{padding:18px;line-height:1.95;color:#e7dcc9;font-size:16px;background:linear-gradient(135deg,rgba(215,176,74,.10),rgba(255,255,255,.03));box-shadow:0 0 0 1px rgba(215,176,74,.16)}
+.detailGrid{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;margin-top:12px}
+@media(max-width:860px){.detailGrid{grid-template-columns:1fr}}
+.detailBox{padding:14px}
+.detailBox .dk{font-size:13px;color:var(--muted);font-weight:900;margin-bottom:8px}
+.detailBox .dv{font-size:28px;font-weight:900}
+.detailBox .ds{font-size:14px;color:#e2d8c6;line-height:1.85;margin-top:8px}
+.field{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:12px}
+label{display:block;font-size:13px;font-weight:900;color:var(--gold2);margin-bottom:8px}
+input,select,textarea{
+  width:100%;padding:14px 15px;border-radius:14px;border:1px solid #3a3d45;background:#0f1013;color:var(--text);
+  font-size:17px;outline:none;appearance:none
+}
+textarea{min-height:76px;resize:vertical}
+.hint{font-size:12px;color:var(--muted);line-height:1.7;margin-top:8px}
+.actions{display:flex;gap:10px;flex-wrap:wrap;align-items:center;margin-top:12px}
+.btn{border:none;border-radius:16px;padding:15px 20px;font-size:16px;font-weight:900;cursor:pointer;text-decoration:none;display:inline-block}
+.btn.primary{background:linear-gradient(135deg,#f2d68d,#c8951d);color:#111}
+.btn.secondary{background:#1b1d22;color:var(--text);border:1px solid #3a3d45}
+.status{font-size:13px;font-weight:900;color:var(--green)}
+.small{font-size:14px;color:var(--muted)}
+.keyCard{padding:18px;border:1px solid rgba(215,176,74,.28);box-shadow:0 12px 32px rgba(0,0,0,.18)}
+.keyCard .kt{font-size:13px;font-weight:900;color:var(--gold3);margin-bottom:8px}
+.keyCard .kh{font-size:25px;font-weight:900;line-height:1.25;color:#fff5d6;margin-bottom:8px}
+.keyCard .kb{font-size:15px;line-height:1.9;color:#fff0d1}
+.focusLease{
+  background:linear-gradient(135deg,rgba(215,176,74,.24),rgba(255,255,255,.05)) !important;
+  border:1px solid rgba(255,232,173,.40) !important;
+  box-shadow:0 0 0 1px rgba(255,255,255,.05),0 20px 40px rgba(0,0,0,.25);
+}
+.focusLease .v,.focusLease h3,.focusLease .kh{color:#fff5d6}
+.mono{font-variant-numeric:tabular-nums}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <section class="hero">
+    <div class="brand">CARPLUS 格上租車｜企業版｜手機優先｜直接給你看的版本</div>
+    <h1 id="heroTitle">企業用車怎麼選更適合｜直接看懂現金 vs 貸款 vs 租賃｜5年</h1>
+    <p class="lead">
+      <span style="display:block;font-weight:900;color:var(--gold2);margin-bottom:6px">企業用車，我先幫你把重點攤開來看^^</span>
+      同一台車，現金買、貸款買、租賃用車，差別不只是付款方式，而是<b>資金放在更有彈性的地方</b>。這一頁會直接帶你看 4 個重點：<b>今天先拿多少</b>、<b>每個月怎麼安排</b>、<b>選幾年整體差多少</b>、<b>如果你是公司戶，還能多看一層發票與稅務參考</b>。
+    </p>
+    <div class="tags"><div class="tag">同一台車，先看三種方式差在哪</div><div class="tag">現金：最直接</div><div class="tag">貸款：折衷方案</div><div class="tag">租賃：更重視資金安排</div></div>
+    <div class="actions" style="margin-top:14px">
+      <a class="btn secondary" href="index.html">回到首頁</a>
+      <a class="btn secondary" href="personal.html">看個人版</a>
+      <a class="btn secondary" href="business.html">看企業版</a>
+    </div>
+  </section>
+
+  <section class="panel">
+    <div class="secTitle">先看這 4 個重點，你會最有感</div>
+    <p class="secSub">先把最有感的答案看懂，再往下看細節，整體會清楚很多。</p>
+    <div class="three">
+      <div class="card">
+        <div class="k">1. 先看今天先拿多少</div>
+        <div class="v">先看當下壓力</div>
+        <div class="s">同一台車，現金購入通常要先準備最多；貸款會先付頭款；租賃先看保證金，資金壓力通常最輕。</div>
+      </div>
+      <div class="card">
+        <div class="k">2. 再看每個月怎麼安排</div>
+        <div class="v">先看月付感受</div>
+        <div class="s">現金買沒有車貸月付；貸款每月要還款；租賃直接看月租，安排起來通常更直覺。</div>
+      </div>
+      <div class="card">
+        <div class="k">3. 最後看整體怎麼差</div>
+        <div class="v" id="focusYearsText">把時間拉長來看</div>
+        <div class="s">你選幾年，頁面就看幾年的比較。貸款是折衷方案；租賃的優勢，通常拉到整段安排會更明顯。</div>
+      </div>
+    </div>
+    <div class="summaryBar primarySummary">
+      <div class="sumTag">一句話先看懂</div>
+      <div class="sumTitle">企業用車，重點不是只看車價，而是看資金安排。</div>
+      <div class="sumText">現金最直接，貸款是折衷，租賃則更像把用車做成一段安排。你不一定要先選答案，只要先把差別看懂，就會知道哪一種更適合你。</div>
+    </div>
+  </section>
+
+  <section class="panel">
+    <div class="secTitle">把這台車的條件帶進來看</div>
+    <p class="secSub">把這台車的條件帶進來，就能直接看出現金購入、貸款購入和租賃方案的差別。</p>
+    <div class="formGrid">
+      <div class="field">
+        <label>車款名稱</label>
+        <input id="model" value="Jimny GLX" oninput="calculate()">
+      </div>
+      <div class="field">
+        <label>年數</label>
+        <select id="years" onchange="calculate()">
+          <option value="1">1 年</option>
+          <option value="2">2 年</option>
+          <option value="3">3 年</option>
+          <option value="4">4 年</option>
+          <option value="5" selected>5 年</option>
+        </select>
+        <div class="hint">想看幾年的安排，就選幾年。</div>
+      </div>
+    </div>
+    <div class="formGrid3" style="margin-top:12px">
+      <div class="field"><label>車輛售價</label><input id="salePrice" type="number" value="849000" oninput="calculate()"></div>
+      <div class="field"><label>配備金額</label><input id="optionsPrice" type="number" value="0" oninput="calculate()"></div>
+      <div class="field"><label>折讓金額</label><input id="discountPrice" type="number" value="0" oninput="calculate()"></div>
+    </div>
+    <div class="formGrid" style="margin-top:12px">
+      <div class="field"><label>排氣量（cc）</label><input id="cc" type="number" value="1462" oninput="calculate()"></div>
+      <div class="field">
+        <label>燃料別</label>
+        <select id="fuel" onchange="calculate()">
+          <option value="汽油" selected>汽油</option>
+          <option value="柴油">柴油</option>
+          <option value="機車">機車</option>
+        </select>
+      </div>
+    </div>
+    <div class="formGrid" style="margin-top:12px">
+      <div class="field">
+        <label>牌照稅類型</label>
+        <select id="licenseType" onchange="calculate()">
+          <option>自用小客車</option><option>營業用小客車</option><option>小客貨兩用車（比照自用小客車）</option>
+          <option>大客車</option><option>貨車</option><option>曳引車（貨車+30%）</option><option>機車</option>
+        </select>
+      </div>
+      <div class="field">
+        <label>燃料稅（養路費）類型</label>
+        <select id="roadType" onchange="calculate()">
+          <option>自用小客車</option><option>自用貨車</option><option>自用大客車</option><option>機車</option>
+        </select>
+      </div>
+    </div>
+    <div class="formGrid3" style="margin-top:12px">
+      <div class="field">
+        <label>首年保費</label>
+        <input id="firstInsurance" type="number" value="42110" oninput="calculate()">
+        <div class="hint">整段保險估算：首年保費 × 年數</div>
+      </div>
+      <div class="field">
+        <label>含稅月租金</label>
+        <input id="leaseMonthTax" type="number" value="21900" oninput="calculate()">
+        <div class="hint">未稅月租金會自動換算。</div>
+      </div>
+      <div class="field">
+        <label>貸款年利率（%）</label>
+        <input id="loanRate" type="number" step="0.1" value="3.5" oninput="calculate()">
+        <div class="hint">預設 3.5%，可自行調整。</div>
+      </div>
+    </div>
+    <div class="formGrid" style="margin-top:12px">
+      <div class="field">
+        <label>0050 年化報酬率示意（%）</label>
+        <input id="etfRate" type="number" step="0.1" value="8" oninput="calculate()">
+        <div class="hint">這裡只做示意試算，方便讓你理解：把現金留在手上，也可能有更多運用空間。</div>
+      </div>
+      <div class="field">
+        <label>投資說明</label>
+        <input value="以下以 0050 作為示意標的" disabled>
+        <div class="hint">本區不是保證收益，只是示意試算。</div>
+      </div>
+    </div>
+    <div class="field" style="margin-top:12px">
+      <label>補充說明</label>
+      <textarea id="remark" oninput="calculate()">例如：實際條件依正式報價單與合約內容為準</textarea>
+    </div>
+    <div class="actions">
+      <button class="btn primary" onclick="calculate()">開始計算</button>
+      <button class="btn secondary" onclick="resetForm()">清空重填</button>
+      <span class="status" id="status">已自動計算</span>
+    </div>
+  </section>
+
+  <section class="panel">
+    <div class="secTitle">先看：今天先拿多少，差別最直接</div>
+    <p class="secSub">同一台車，差別常常不是買不買得起，而是要不要一開始就拿那麼多現金出來。</p>
+    <div class="three">
+      <div class="bigBox">
+        <h3>現金購入｜今天先準備</h3>
+        <div class="bigNum mono" id="upfrontCashTotal">NT$0</div>
+        <div class="row"><div class="name">全款</div><div class="val mono" id="upfrontCashDeal">NT$0</div></div>
+        <div class="row"><div class="name">一年保險</div><div class="val mono" id="upfrontCashIns">NT$0</div></div>
+        <div class="row"><div class="name">一年牌照稅＋一年燃料稅</div><div class="val mono" id="upfrontCashTax">NT$0</div></div>
+        <div class="bigFoot">現金購入是一開始就把車價一次付出去，後面的保險、稅費與用車安排，也都由你自己承擔。</div>
+      </div>
+      <div class="bigBox">
+        <h3>貸款購入｜今天先準備</h3>
+        <div class="bigNum mono" id="upfrontLoanTotal">NT$0</div>
+        <div class="row"><div class="name">頭款</div><div class="val mono" id="upfrontLoanDown">NT$0</div></div>
+        <div class="row"><div class="name">一年保險</div><div class="val mono" id="upfrontLoanIns">NT$0</div></div>
+        <div class="row"><div class="name">一年牌照稅＋一年燃料稅</div><div class="val mono" id="upfrontLoanTax">NT$0</div></div>
+        <div class="bigFoot">貸款本質上也是先把車買下來，只是把剩下的金額拆成每個月慢慢還，期間也會有利息。</div>
+      </div>
+      <div class="bigBox">
+        <h3>租賃方案｜今天先準備</h3>
+        <div class="bigNum mono" id="upfrontLeaseTotal">NT$0</div>
+        <div class="row"><div class="name">保證金</div><div class="val mono" id="upfrontLeaseDeposit">NT$0</div></div>
+        <div class="row"><div class="name">月租另外看</div><div class="val mono">這裡先看保證金</div></div>
+        <div class="row"><div class="name">期滿後怎麼看</div><div class="val mono">可由第三人買回</div></div>
+        <div class="bigFoot">租賃先看保證金，先把大筆現金留在自己手上，安排上通常會更輕鬆。</div>
+      </div>
+    </div>
+    <div class="summaryBar primarySummary">
+      <div class="sumTag">這一段總結</div>
+      <div class="sumTitle" id="sumUpfrontTitle">租賃最大的第一個優勢，就是今天不用先拿那麼多現金。</div>
+      <div class="sumText" id="sumUpfrontText">和現金購入、貸款購入相比，租賃先看保證金，能先把大筆現金留在自己手上。</div>
+    </div>
+  </section>
+
+  
+  
+  <section class="panel">
+    <div class="secTitle">再看：不要只看貸款月付，要看每月整體負擔</div>
+    <p class="secSub">如果你只看貸款月付款，貸款看起來一定會比較低；但真正用車，不會只有還款。把保險、牌照稅、燃料稅與整體安排一起看，會更接近真實感受。</p>
+    <div class="two">
+      <div class="card">
+        <div class="k">貸款購入｜每月整體負擔參考</div>
+        <div class="v mono" id="loanMonthLoad">NT$0</div>
+        <div class="s" id="loanMonthNote">這裡不是只看貸款月付款，而是把每月還款、每月平均保險與每月平均稅費一起看。</div>
+      </div>
+      <div class="card focusLease">
+        <div class="k">租賃方案｜固定月租金</div>
+        <div class="v mono" id="leaseMonthDisplay">NT$0</div>
+        <div class="s" id="leaseMonthDisplayNote">月租就是固定月付安排，感受最直覺。</div>
+        <div class="hint" style="margin-top:10px">下面的拆解只是幫你看懂月租怎麼組成，不是月租之外另外再加收。</div>
+      </div>
+    </div>
+    <div class="summaryBar primarySummary">
+      <div class="sumTag">這一段總結</div>
+      <div class="sumTitle" id="sumMonthlyTitle">如果你只看貸款月付，貸款一定比較低；但如果看每月整體負擔，租賃通常更接近真實用車感受。</div>
+      <div class="sumText" id="sumMonthlyText">貸款月付款看起來漂亮，通常是因為那一格先只看到還款。租賃的好處，是把用車更直接整理成固定月付安排，理解上更直覺，也更容易掌握節奏。</div>
+    </div>
+  </section>
+
+  
+  <section class="panel">
+    <div class="secTitle">最後看：把時間拉長，租賃優勢會更明顯</div>
+    <p class="secSub" id="periodSub">把你選的年數拉長來看，現金最直接、貸款是折衷，而租賃的優勢通常會在整段安排裡更明顯。</p>
+    <div class="three">
+      <div class="bigBox focusLease">
+        <h3 id="leaseHeading">5年租賃方案</h3>
+        <div class="bigNum mono" id="leaseTotalDisplay">NT$0</div>
+        <div class="row"><div class="name">保證金</div><div class="val mono" id="leaseDeposit">NT$0</div></div>
+        <div class="row"><div class="name" id="leaseRentLabel">5年月租金總額</div><div class="val mono" id="leaseRentTotal">NT$0</div></div>
+        <div class="row"><div class="name">公司戶發票參考</div><div class="val mono" id="leaseVatTotal">NT$0</div></div>
+        <div class="row"><div class="name" id="leaseExtraLabel">公司戶稅務參考</div><div class="val mono" id="leaseCorpTaxTotal">NT$0</div></div>
+        <div class="row"><div class="name">平均每月</div><div class="val mono" id="leaseAvgMonth">NT$0</div></div>
+        <div class="bigFoot">租賃不只是把車開回去，也像多了一位幫你顧車的管家。尤其企業用車，除了月付安排，也常會多一層發票與稅務參考空間。</div>
+      </div>
+      <div class="bigBox">
+        <h3 id="loanHeading">5年貸款購入</h3>
+        <div class="bigNum mono" id="loanTotal">NT$0</div>
+        <div class="row"><div class="name">頭款</div><div class="val mono" id="loanDownPayment">NT$0</div></div>
+        <div class="row"><div class="name" id="loanPrincipalLabel">貸款本金</div><div class="val mono" id="loanPrincipal">NT$0</div></div>
+        <div class="row"><div class="name" id="loanInterestLabel">總利息</div><div class="val mono" id="loanInterest">NT$0</div></div>
+        <div class="row"><div class="name">平均每月</div><div class="val mono" id="loanAvgMonth">NT$0</div></div>
+        <div class="bigFoot">貸款是一種折衷方案：今天不用像現金一樣一次拿那麼多，但每個月還款和整段利息會一路跟著你。</div>
+      </div>
+      <div class="bigBox">
+        <h3 id="cashHeading">5年現金購入</h3>
+        <div class="bigNum mono" id="cashTotal">NT$0</div>
+        <div class="row"><div class="name">車輛成交金額</div><div class="val mono" id="cashDeal">NT$0</div></div>
+        <div class="row"><div class="name" id="cashInsuranceLabel">5年保險</div><div class="val mono" id="cashInsurance">NT$0</div></div>
+        <div class="row"><div class="name" id="cashTaxLabel">5年牌照稅＋燃料稅</div><div class="val mono" id="cashTax">NT$0</div></div>
+        <div class="row"><div class="name">平均每月</div><div class="val mono" id="cashAvgMonth">NT$0</div></div>
+        <div class="bigFoot">現金購入是一開始就把車價一次付出去，後面的保險、稅費與用車安排，也都由你自己承擔。</div>
+      </div>
+    </div>
+    <div class="miniBox" style="margin-top:12px">
+      <div class="miniTitle" id="diffTitle">整體比較</div>
+      <div class="miniNum mono" id="diffTotal">NT$0</div>
+      <div class="miniText" id="diffText">把你選的年數拉長來看，三種方式的差異會更清楚。</div>
+      <div class="small" id="diffTextTax" style="margin-top:8px;color:#eadfc9">如果你是公司戶，這裡也會一起顯示發票與稅務參考。</div>
+    </div>
+    <div class="summaryBar primarySummary">
+      <div class="sumTag">這一段總結</div>
+      <div class="sumTitle" id="sumPeriodTitle">把時間拉長來看，租賃不是只看車價，而是看整段用車安排。</div>
+      <div class="sumText" id="sumPeriodText">現金最直接、貸款是折衷，而租賃最有優勢的地方，是把當下現金壓力、每月安排、後續處理方式與公司戶參考一起放進來看。這樣更接近真正適合你的決定。</div>
+    </div>
+  </section>
+
+  <section class="panel">
+    <div class="secTitle">再多看一點：這筆現金，如果先留在手上</div>
+    <p class="secSub">如果把「和現金購入相比，現在可先保留的現金」拿來做示意，租賃的價值不只是在當下比較輕鬆，也可能多一層資金成長的機會。</p>
+    <div class="two">
+      <div class="bigBox">
+        <h3 id="investHeading">這筆現金，如果先留在手上</h3>
+        <div class="bigNum mono" id="investFutureValue">NT$0</div>
+        <div class="row"><div class="name">和現金購入相比，可先保留的現金</div><div class="val mono" id="investPrincipal">NT$0</div></div>
+        <div class="row"><div class="name">選擇的年數</div><div class="val mono" id="investYears">0 年</div></div>
+        <div class="row"><div class="name">以 0050 做示意的年化報酬率</div><div class="val mono" id="investRate">0%</div></div>
+        <div class="row"><div class="name">可能增加的收益</div><div class="val mono" id="investGain">NT$0</div></div>
+        <div class="bigFoot">這裡是示意試算，不代表保證報酬，也不代表實際投資建議；只是讓你看見：把現金留在手上，不一定只是少壓力，也可能多一個創造收入的機會。本區只用購車當下可先保留的現金做示意，沒有另外把每月差異再投入。</div>
+      </div>
+      <div class="bigBox">
+        <h3>三種方式，怎麼看最清楚</h3>
+        <div class="keyGrid">
+          <div class="keyCard"><div class="kt">現金</div><div class="kh">最直接</div><div class="kb">今天先拿最多，車直接是你的，後面的保險和稅費也都自己來。</div></div>
+          <div class="keyCard"><div class="kt">貸款</div><div class="kh">折衷方案</div><div class="kb">不用一次拿全部，但每月還款與利息會一路跟著你。</div></div>
+          <div class="keyCard"><div class="kt">租賃</div><div class="kh">更會安排</div><div class="kb">今天先拿比較少，每月安排更直覺，期滿也有後續路徑可以看。</div></div>
+        </div>
+      </div>
+    </div>
+    <div class="summaryBar">
+      <div class="sumTag">這一段總結</div>
+      <div class="sumTitle" id="sumInvestTitle">租賃的重點，不只是少一點壓力，而是把資金留在更有機會創造價值的地方。</div>
+      <div class="sumText" id="sumInvestText">當同一台車不用先用現金買斷，保留下來的資金，就不只是備用金，也可能成為投資、週轉或其他收入安排的起點。</div>
+    </div>
+  </section>
+
+  <section class="panel">
+    <div class="secTitle">最後這一點講清楚，你會更放心</div>
+    <p class="secSub">租賃不是用完就什麼都沒有，這一點一定要先講清楚。</p>
+    <div class="noteBox">
+      <b>期滿說明</b><br>
+      期滿之後，車輛可過戶由第三人買回，買回價格原則上以保證金為基準；實際仍以正式報價、合約內容與作業方式為準。
+    </div>
+    <div class="summaryBar">
+      <div class="sumTag">這一段總結</div>
+      <div class="sumTitle" id="sumEndTitle">租賃不是用完就結束，期滿後也有安排。</div>
+      <div class="sumText" id="sumEndText">期滿後可由第三人買回，價格原則上以保證金為基準；實際仍以正式報價、合約內容與作業方式為準。這代表租賃不是只有使用權，而是把前面的用車安排和後面的處理方式，一起規劃好。</div>
+    </div>
+  </section>
+
+  <section class="panel">
+    <div class="secTitle">想知道數字怎麼來，再往下看</div>
+    <p class="secSub">前面先看結果，這裡再把每個數字攤開來看。</p>
+    <details>
+      <summary>看這些數字怎麼來</summary>
+      <div class="detailGrid">
+        <div class="detailBox"><div class="dk">車輛成交金額</div><div class="dv mono" id="outDeal">NT$0</div><div class="ds" id="outDealNote">車價 + 配備 - 折讓</div></div>
+        <div class="detailBox"><div class="dk">保證金 / 頭款</div><div class="dv mono" id="outDeposit">NT$0</div><div class="ds" id="outDepositNote">依年數比例抓整萬</div></div>
+        <div class="detailBox"><div class="dk">一年牌照稅</div><div class="dv mono" id="outLicense">NT$0</div><div class="ds" id="outLicenseNote">依排氣量與牌照稅類型帶入</div></div>
+        <div class="detailBox"><div class="dk">一年燃料稅（養路費）</div><div class="dv mono" id="outRoad">NT$0</div><div class="ds" id="outRoadNote">依排氣量、燃料與類型帶入</div></div>
+        <div class="detailBox"><div class="dk">車價扣除保證金平均每月</div><div class="dv mono" id="outVehicleMonth">NT$0</div><div class="ds" id="outVehicleMonthNote">（車輛成交金額－保證金）÷ 月數</div></div>
+        <div class="detailBox"><div class="dk" id="outInsTitle">整段保險估算</div><div class="dv mono" id="outInsTotal">NT$0</div><div class="ds" id="outInsNote">首年保費 × 年數</div></div>
+        <div class="detailBox"><div class="dk" id="outTaxTitle">整段牌照稅＋燃料稅（養路費）</div><div class="dv mono" id="outTaxTotal">NT$0</div><div class="ds" id="outTaxNote">一年牌照稅 + 一年燃料稅，再乘上年數</div></div>
+        <div class="detailBox"><div class="dk">貸款每月還款</div><div class="dv mono" id="detailLoanMonth">NT$0</div><div class="ds" id="detailLoanMonthNote">依年利率與月數，用本息平均攤還試算。這一格只看還款，不含保險與稅費。</div></div>
+        <div class="detailBox"><div class="dk">貸款總利息</div><div class="dv mono" id="detailLoanInterest">NT$0</div><div class="ds" id="detailLoanInterestNote">每月還款 × 月數，再扣掉貸款本金。這一格就是貸款比租賃更容易被忽略的地方。</div></div>
+      </div>
+    </details>
+    
+    <details>
+      <summary>如果你是公司戶，這一段再多看就可以</summary>
+      <div class="hint" style="margin:10px 0 14px">如果你是個人用車，這一段可以先略過。</div>
+      <div class="detailGrid">
+        <div class="detailBox">
+          <div class="dk">未稅月租金</div>
+          <div class="dv mono" id="leaseMonthUntax">NT$0</div>
+          <div class="ds">由含稅月租金自動換算。</div>
+        </div>
+        <div class="detailBox">
+          <div class="dk">公司戶發票 5% 參考</div>
+          <div class="dv mono" id="leaseVatMonthTotal">NT$0</div>
+          <div class="ds">把月租發票中的 5% 稅額整理出來，再乘上租期月數。</div>
+        </div>
+        <div class="detailBox">
+          <div class="dk">每年可能折抵 20% 營所稅</div>
+          <div class="dv mono" id="leaseCorpTaxAnnual">NT$0</div>
+          <div class="ds">以未稅月租金 × 12 × 20% 做快速參考。</div>
+        </div>
+        <div class="detailBox">
+          <div class="dk" id="leaseCorpTaxPeriodTitle">租期內可能折抵 20% 營所稅</div>
+          <div class="dv mono" id="leaseCorpTaxPeriod">NT$0</div>
+          <div class="ds">這裡先做快速比較，實際仍以公司條件與專業建議為準。</div>
+        </div>
+      </div>
+    </details>
+    
+    <div class="noteBox" style="margin-top:12px" id="remarkBox">
+      <b>補充提醒</b><br>
+      實際條件依正式報價單與合約內容為準。<br>
+      本頁比較以車價、保證金 / 頭款、保險、牌照稅、燃料稅（養路費）、月租、貸款與公司戶參考為主；其他如保養、維修、停車、過路、油電等，依實際使用情況另計。
+    </div>
+  </section>
+
+  <section class="panel">
+    <div class="secTitle">你現在最需要看的，其實就是這 6 件事</div>
+    <p class="secSub">不需要一次把所有細節都記住。你只要先看懂下面這幾個重點，就能更快判斷哪一種比較適合你。</p>
+    <div class="keyGrid">
+      <div class="keyCard"><div class="kt">重點 1</div><div class="kh">現金最直接</div><div class="kb">車直接買下來，但今天先拿的現金通常最多。</div></div>
+      <div class="keyCard"><div class="kt">重點 2</div><div class="kh">貸款是折衷</div><div class="kb">今天先拿比較少，但每月還款與整段利息會一路跟著你。</div></div>
+      <div class="keyCard"><div class="kt">重點 3</div><div class="kh">租賃先拿最少</div><div class="kb">租賃先看保證金，當下壓力通常最輕，也更容易把現金留在手上。</div></div>
+      <div class="keyCard"><div class="kt">重點 4</div><div class="kh">每月安排更直覺</div><div class="kb">租賃直接看月租；貸款則要再加上利息與保險稅費一起看。</div></div>
+      <div class="keyCard"><div class="kt">重點 5</div><div class="kh">如果你是公司戶，可能更有感</div><div class="kb">除了月付安排，也常會多一層發票與稅務參考空間。</div></div>
+      <div class="keyCard"><div class="kt">下一步</div><div class="kh">直接看你的車款</div><div class="kb">你給我車款、想看幾年，我就能直接幫你把現金購入、貸款購入和租賃方案攤開來比較。</div></div>
+    </div>
+    <div class="summaryBar primarySummary">
+      <div class="sumTag">一句話看懂</div>
+      <div class="sumTitle">企業用車，重點不是只看車價，而是看資金安排。</div>
+      <div class="sumText">現金最直接、貸款是折衷、租賃更會安排。尤其當你重視現金彈性時，租賃通常最有感。把今天先拿多少、每月怎麼安排、期滿怎麼看和保留下來的資金一起看，通常會更接近真正適合你的決定。</div>
+    </div>
+  </section>
+</div>
+
+<script>
+const depositRatioMap={1:0.50,2:0.40,3:0.30,4:0.25,5:0.20};
+const licenseRows=[{"type":"自用小客車","min":0,"max":500,"amount":1620},{"type":"自用小客車","min":501,"max":600,"amount":2160},{"type":"自用小客車","min":601,"max":1200,"amount":4320},{"type":"自用小客車","min":1201,"max":1800,"amount":7120},{"type":"自用小客車","min":1801,"max":2400,"amount":11230},{"type":"自用小客車","min":2401,"max":3000,"amount":15210},{"type":"自用小客車","min":3001,"max":4200,"amount":28220},{"type":"自用小客車","min":4201,"max":5400,"amount":46170},{"type":"自用小客車","min":5401,"max":6600,"amount":69690},{"type":"自用小客車","min":6601,"max":7800,"amount":117000},{"type":"自用小客車","min":7801,"max":999999,"amount":151200},{"type":"營業用小客車","min":0,"max":500,"amount":900},{"type":"營業用小客車","min":501,"max":600,"amount":1260},{"type":"營業用小客車","min":601,"max":1200,"amount":2160},{"type":"營業用小客車","min":1201,"max":1800,"amount":3060},{"type":"營業用小客車","min":1801,"max":2400,"amount":6480},{"type":"營業用小客車","min":2401,"max":3000,"amount":9900},{"type":"營業用小客車","min":3001,"max":4200,"amount":16380},{"type":"營業用小客車","min":4201,"max":5400,"amount":24300},{"type":"營業用小客車","min":5401,"max":6600,"amount":33660},{"type":"營業用小客車","min":6601,"max":7800,"amount":44460},{"type":"營業用小客車","min":7801,"max":999999,"amount":56700},{"type":"小客貨兩用車（比照自用小客車）","min":0,"max":500,"amount":1620},{"type":"小客貨兩用車（比照自用小客車）","min":501,"max":600,"amount":2160},{"type":"小客貨兩用車（比照自用小客車）","min":601,"max":1200,"amount":4320},{"type":"小客貨兩用車（比照自用小客車）","min":1201,"max":1800,"amount":7120},{"type":"小客貨兩用車（比照自用小客車）","min":1801,"max":2400,"amount":11230},{"type":"小客貨兩用車（比照自用小客車）","min":2401,"max":3000,"amount":15210},{"type":"小客貨兩用車（比照自用小客車）","min":3001,"max":4200,"amount":28220},{"type":"小客貨兩用車（比照自用小客車）","min":4201,"max":5400,"amount":46170},{"type":"小客貨兩用車（比照自用小客車）","min":5401,"max":6600,"amount":69690},{"type":"小客貨兩用車（比照自用小客車）","min":6601,"max":7800,"amount":117000},{"type":"小客貨兩用車（比照自用小客車）","min":7801,"max":999999,"amount":151200},{"type":"大客車","min":501,"max":600,"amount":1080},{"type":"大客車","min":601,"max":1200,"amount":1800},{"type":"大客車","min":1201,"max":1800,"amount":2700},{"type":"大客車","min":1801,"max":2400,"amount":3600},{"type":"大客車","min":2401,"max":3000,"amount":4500},{"type":"大客車","min":3001,"max":3600,"amount":5400},{"type":"大客車","min":3601,"max":4200,"amount":6300},{"type":"大客車","min":4201,"max":4800,"amount":7200},{"type":"大客車","min":4801,"max":5400,"amount":8100},{"type":"大客車","min":5401,"max":6000,"amount":9000},{"type":"大客車","min":6001,"max":6600,"amount":9900},{"type":"大客車","min":6601,"max":7200,"amount":10800},{"type":"大客車","min":7201,"max":7800,"amount":11700},{"type":"大客車","min":7801,"max":8400,"amount":12600},{"type":"大客車","min":8401,"max":9000,"amount":13500},{"type":"大客車","min":9001,"max":9600,"amount":14400},{"type":"大客車","min":9601,"max":10200,"amount":15300},{"type":"大客車","min":10201,"max":999999,"amount":16200},{"type":"貨車","min":0,"max":500,"amount":900},{"type":"貨車","min":501,"max":600,"amount":1080},{"type":"貨車","min":601,"max":1200,"amount":1800},{"type":"貨車","min":1201,"max":1800,"amount":2700},{"type":"貨車","min":1801,"max":2400,"amount":3600},{"type":"貨車","min":2401,"max":3000,"amount":4500},{"type":"貨車","min":3001,"max":3600,"amount":5400},{"type":"貨車","min":3601,"max":4200,"amount":6300},{"type":"貨車","min":4201,"max":4800,"amount":7200},{"type":"貨車","min":4801,"max":5400,"amount":8100},{"type":"貨車","min":5401,"max":6000,"amount":9000},{"type":"貨車","min":6001,"max":6600,"amount":9900},{"type":"貨車","min":6601,"max":7200,"amount":10800},{"type":"貨車","min":7201,"max":7800,"amount":11700},{"type":"貨車","min":7801,"max":8400,"amount":12600},{"type":"貨車","min":8401,"max":9000,"amount":13500},{"type":"貨車","min":9001,"max":9600,"amount":14400},{"type":"貨車","min":9601,"max":10200,"amount":15300},{"type":"貨車","min":10201,"max":999999,"amount":16200},{"type":"曳引車（貨車+30%）","min":0,"max":500,"amount":1170},{"type":"曳引車（貨車+30%）","min":501,"max":600,"amount":1404},{"type":"曳引車（貨車+30%）","min":601,"max":1200,"amount":2340},{"type":"曳引車（貨車+30%）","min":1201,"max":1800,"amount":3510},{"type":"曳引車（貨車+30%）","min":1801,"max":2400,"amount":4680},{"type":"曳引車（貨車+30%）","min":2401,"max":3000,"amount":5850},{"type":"曳引車（貨車+30%）","min":3001,"max":3600,"amount":7020},{"type":"曳引車（貨車+30%）","min":3601,"max":4200,"amount":8190},{"type":"曳引車（貨車+30%）","min":4201,"max":4800,"amount":9360},{"type":"曳引車（貨車+30%）","min":4801,"max":5400,"amount":10530},{"type":"曳引車（貨車+30%）","min":5401,"max":6000,"amount":11700},{"type":"曳引車（貨車+30%）","min":6001,"max":6600,"amount":12870},{"type":"曳引車（貨車+30%）","min":6601,"max":7200,"amount":14040},{"type":"曳引車（貨車+30%）","min":7201,"max":7800,"amount":15210},{"type":"曳引車（貨車+30%）","min":7801,"max":8400,"amount":16380},{"type":"曳引車（貨車+30%）","min":8401,"max":9000,"amount":17550},{"type":"曳引車（貨車+30%）","min":9001,"max":9600,"amount":18720},{"type":"曳引車（貨車+30%）","min":9601,"max":10200,"amount":19890},{"type":"曳引車（貨車+30%）","min":10201,"max":999999,"amount":21060},{"type":"機車","min":0,"max":150,"amount":0},{"type":"機車","min":151,"max":250,"amount":800},{"type":"機車","min":251,"max":500,"amount":1620},{"type":"機車","min":501,"max":600,"amount":2160},{"type":"機車","min":601,"max":1200,"amount":4320},{"type":"機車","min":1201,"max":1800,"amount":7120},{"type":"機車","min":1801,"max":999999,"amount":11230}];
+const roadRows=[{"type":"機車","fuel":"機車","min":0,"max":50,"amount":300},{"type":"機車","fuel":"機車","min":51,"max":125,"amount":450},{"type":"機車","fuel":"機車","min":126,"max":250,"amount":600},{"type":"機車","fuel":"機車","min":251,"max":500,"amount":900},{"type":"機車","fuel":"機車","min":501,"max":600,"amount":1200},{"type":"機車","fuel":"機車","min":601,"max":1200,"amount":1800},{"type":"機車","fuel":"機車","min":1201,"max":1800,"amount":2010},{"type":"自用大客車","fuel":"汽油","min":2401,"max":3000,"amount":8400},{"type":"自用大客車","fuel":"柴油","min":2401,"max":3000,"amount":5040},{"type":"自用大客車","fuel":"汽油","min":3001,"max":3600,"amount":10080},{"type":"自用大客車","fuel":"柴油","min":3001,"max":3600,"amount":6048},{"type":"自用大客車","fuel":"汽油","min":3601,"max":4200,"amount":11460},{"type":"自用大客車","fuel":"柴油","min":3601,"max":4200,"amount":6876},{"type":"自用大客車","fuel":"汽油","min":4201,"max":4800,"amount":12990},{"type":"自用大客車","fuel":"柴油","min":4201,"max":4800,"amount":7794},{"type":"自用大客車","fuel":"汽油","min":4801,"max":5400,"amount":15210},{"type":"自用大客車","fuel":"柴油","min":4801,"max":5400,"amount":9126},{"type":"自用大客車","fuel":"汽油","min":5401,"max":6000,"amount":16500},{"type":"自用大客車","fuel":"柴油","min":5401,"max":6000,"amount":9900},{"type":"自用大客車","fuel":"汽油","min":6001,"max":6600,"amount":19770},{"type":"自用大客車","fuel":"柴油","min":6001,"max":6600,"amount":11862},{"type":"自用大客車","fuel":"汽油","min":6601,"max":7200,"amount":22680},{"type":"自用大客車","fuel":"柴油","min":6601,"max":7200,"amount":13608},{"type":"自用大客車","fuel":"汽油","min":7201,"max":7800,"amount":26160},{"type":"自用大客車","fuel":"柴油","min":7201,"max":7800,"amount":15696},{"type":"自用大客車","fuel":"汽油","min":7801,"max":8400,"amount":30030},{"type":"自用大客車","fuel":"柴油","min":7801,"max":8400,"amount":18018},{"type":"自用大客車","fuel":"汽油","min":8401,"max":9000,"amount":34020},{"type":"自用大客車","fuel":"柴油","min":8401,"max":9000,"amount":20412},{"type":"自用大客車","fuel":"汽油","min":9001,"max":999999,"amount":34020},{"type":"自用大客車","fuel":"柴油","min":9001,"max":999999,"amount":20412},{"type":"自用小客車","fuel":"汽油","min":0,"max":500,"amount":2160},{"type":"自用小客車","fuel":"汽油","min":501,"max":600,"amount":2880},{"type":"自用小客車","fuel":"汽油","min":601,"max":1200,"amount":4320},{"type":"自用小客車","fuel":"汽油","min":1201,"max":1800,"amount":4800},{"type":"自用小客車","fuel":"汽油","min":1801,"max":2400,"amount":6180},{"type":"自用小客車","fuel":"汽油","min":2401,"max":3000,"amount":7200},{"type":"自用小客車","fuel":"汽油","min":3001,"max":3600,"amount":8640},{"type":"自用小客車","fuel":"汽油","min":3601,"max":4200,"amount":9810},{"type":"自用小客車","fuel":"汽油","min":4201,"max":4800,"amount":11220},{"type":"自用小客車","fuel":"汽油","min":4801,"max":5400,"amount":12180},{"type":"自用小客車","fuel":"汽油","min":5401,"max":6000,"amount":14100},{"type":"自用小客車","fuel":"汽油","min":6001,"max":6600,"amount":15480},{"type":"自用小客車","fuel":"汽油","min":6601,"max":7200,"amount":17700},{"type":"自用小客車","fuel":"汽油","min":7201,"max":7800,"amount":19200},{"type":"自用小客車","fuel":"汽油","min":7801,"max":8400,"amount":22020},{"type":"自用小客車","fuel":"汽油","min":8401,"max":9000,"amount":24300},{"type":"自用小客車","fuel":"汽油","min":9001,"max":999999,"amount":24300},{"type":"自用貨車","fuel":"汽油","min":0,"max":500,"amount":900},{"type":"自用貨車","fuel":"柴油","min":0,"max":500,"amount":540},{"type":"自用貨車","fuel":"汽油","min":501,"max":600,"amount":1080},{"type":"自用貨車","fuel":"柴油","min":501,"max":600,"amount":648},{"type":"自用貨車","fuel":"汽油","min":601,"max":1200,"amount":1800},{"type":"自用貨車","fuel":"柴油","min":601,"max":1200,"amount":1080},{"type":"自用貨車","fuel":"汽油","min":1201,"max":1800,"amount":2700},{"type":"自用貨車","fuel":"柴油","min":1201,"max":1800,"amount":1620},{"type":"自用貨車","fuel":"汽油","min":1801,"max":2400,"amount":3600},{"type":"自用貨車","fuel":"柴油","min":1801,"max":2400,"amount":2160},{"type":"自用貨車","fuel":"汽油","min":2401,"max":3000,"amount":4500},{"type":"自用貨車","fuel":"柴油","min":2401,"max":3000,"amount":2700},{"type":"自用貨車","fuel":"汽油","min":3001,"max":3600,"amount":5400},{"type":"自用貨車","fuel":"柴油","min":3001,"max":3600,"amount":3240},{"type":"自用貨車","fuel":"汽油","min":3601,"max":4200,"amount":6300},{"type":"自用貨車","fuel":"柴油","min":3601,"max":4200,"amount":3780},{"type":"自用貨車","fuel":"汽油","min":4201,"max":4800,"amount":7200},{"type":"自用貨車","fuel":"柴油","min":4201,"max":4800,"amount":4320},{"type":"自用貨車","fuel":"汽油","min":4801,"max":5400,"amount":8100},{"type":"自用貨車","fuel":"柴油","min":4801,"max":5400,"amount":4860},{"type":"自用貨車","fuel":"汽油","min":5401,"max":6000,"amount":9000},{"type":"自用貨車","fuel":"柴油","min":5401,"max":6000,"amount":5400},{"type":"自用貨車","fuel":"汽油","min":6001,"max":6600,"amount":9900},{"type":"自用貨車","fuel":"柴油","min":6001,"max":6600,"amount":5940},{"type":"自用貨車","fuel":"汽油","min":6601,"max":7200,"amount":10800},{"type":"自用貨車","fuel":"柴油","min":6601,"max":7200,"amount":6480},{"type":"自用貨車","fuel":"汽油","min":7201,"max":7800,"amount":11700},{"type":"自用貨車","fuel":"柴油","min":7201,"max":7800,"amount":7020},{"type":"自用貨車","fuel":"汽油","min":7801,"max":8400,"amount":12600},{"type":"自用貨車","fuel":"柴油","min":7801,"max":8400,"amount":7560},{"type":"自用貨車","fuel":"汽油","min":8401,"max":9000,"amount":13500},{"type":"自用貨車","fuel":"柴油","min":8401,"max":9000,"amount":8100},{"type":"自用貨車","fuel":"汽油","min":9001,"max":10000,"amount":28650},{"type":"自用貨車","fuel":"柴油","min":9001,"max":10000,"amount":17190},{"type":"自用貨車","fuel":"汽油","min":10001,"max":11000,"amount":32880},{"type":"自用貨車","fuel":"柴油","min":10001,"max":11000,"amount":19728},{"type":"自用貨車","fuel":"汽油","min":11001,"max":12000,"amount":36810},{"type":"自用貨車","fuel":"柴油","min":11001,"max":12000,"amount":22086},{"type":"自用貨車","fuel":"汽油","min":12001,"max":13000,"amount":43710},{"type":"自用貨車","fuel":"柴油","min":12001,"max":13000,"amount":26226},{"type":"自用貨車","fuel":"汽油","min":13001,"max":14000,"amount":54000},{"type":"自用貨車","fuel":"柴油","min":13001,"max":14000,"amount":32400},{"type":"自用貨車","fuel":"汽油","min":14001,"max":999999,"amount":54000},{"type":"自用貨車","fuel":"柴油","min":14001,"max":999999,"amount":32400}];
+
+function q(id){ return document.getElementById(id); }
+function num(v){ const n=parseFloat(String(v).replace(/,/g,'')); return isNaN(n)?0:n; }
+function fmt(n){ return 'NT$'+Math.max(0,Math.round(n)).toLocaleString('zh-TW'); }
+function floor10k(n){ if(n<=0) return 0; return Math.floor(n/10000)*10000; }
+function setText(id,text){ const el=q(id); if(el) el.textContent=text; }
+function getLicense(cc,type){ if(!cc || cc<=0) return 0; const row=licenseRows.find(r => r.type===type && cc>=r.min && cc<=r.max); return row ? row.amount : 0; }
+function getRoad(cc,type,fuel){ if(!cc || cc<=0) return 0; const row=roadRows.find(r => r.type===type && r.fuel===fuel && cc>=r.min && cc<=r.max); return row ? row.amount : 0; }
+function pmt(rate,nper,pv){ if(nper<=0) return 0; if(rate===0) return pv/nper; return pv*rate*Math.pow(1+rate,nper)/(Math.pow(1+rate,nper)-1); }
+
+function clearOutputs(){
+  ['upfrontCashTotal','upfrontCashDeal','upfrontCashIns','upfrontCashTax','upfrontLoanTotal','upfrontLoanDown','upfrontLoanIns','upfrontLoanTax','upfrontLeaseTotal','upfrontLeaseDeposit','cashMonthLoad','loanMonthLoad','leaseMonthDisplay','outKnownMonthly','loanMonthPay','cashTotal','cashDeal','cashInsurance','cashTax','cashAvgMonth','loanTotal','loanDownPayment','loanPrincipal','loanInterest','loanAvgMonth','leaseTotalDisplay','leaseDeposit','leaseRentTotal','leaseVatTotal','leaseCorpTaxTotal','leaseKeepCash','leaseMonthUntax','leaseVatMonthTotal','leaseCorpTaxAnnual','leaseCorpTaxPeriod','investFutureValue','investPrincipal','investYears','investRate','investGain','outDeal','outDeposit','outLicense','outRoad','outVehicleMonth','outInsTotal','outTaxTotal','detailLoanMonth','detailLoanInterest'].forEach(id=>setText(id,'—'));
+  setText('leaseEndNote','可由第三人買回');
+  setText('status','已清空，可重新輸入');
+}
+
+function calculate(){
+  try{
+    const years=num(q('years').value)||5, months=years*12||1;
+    const yearsText=years+'年';
+    const sale=num(q('salePrice').value), options=num(q('optionsPrice').value), discount=num(q('discountPrice').value);
+    const deal=Math.max(0,sale+options-discount);
+    const ratio=depositRatioMap[years]||0.2;
+    const deposit=floor10k((sale+options)*ratio);
+    const downPayment=deposit;
+    const cc=Math.round(num(q('cc').value)), fuel=q('fuel').value;
+    const annualLicense=getLicense(cc,q('licenseType').value);
+    const annualRoad=getRoad(cc,q('roadType').value,fuel);
+    const annualTax=annualLicense+annualRoad;
+    const firstInsurance=num(q('firstInsurance').value);
+    const insuranceTotal=Math.round(firstInsurance*years);
+    const taxTotal=annualTax*years;
+    const loanRate=num(q('loanRate').value);
+    const loanPrincipal=Math.max(0,deal-downPayment);
+    const loanMonthly=pmt(loanRate/100/12, months, loanPrincipal);
+    const loanMonthlyRound=Math.round(loanMonthly);
+    const loanTotalPaid=Math.round(loanMonthly*months);
+    const loanInterest=Math.max(0,loanTotalPaid-loanPrincipal);
+
+    const vehicleMonth=Math.max(0,Math.round((deal-deposit)/months));
+    const insuranceMonth=Math.round(insuranceTotal/months);
+    const taxMonth=Math.round(taxTotal/months);
+    const cashMonthLoad=Math.round((insuranceTotal+taxTotal)/months);
+    const loanMonthLoad=loanMonthlyRound+insuranceMonth+taxMonth;
+    const leaseMonthTax=num(q('leaseMonthTax').value);
+    const leaseMonthUntaxExact=leaseMonthTax/1.05;
+    const leaseMonthUntax=Math.round(leaseMonthUntaxExact);
+    const leaseVatMonth=Math.max(0,leaseMonthTax-leaseMonthUntaxExact);
+    const leaseVatTotal=Math.round(leaseVatMonth*months);
+    const leaseCorpTaxAnnual=Math.round(leaseMonthUntaxExact*12*0.20);
+    const leaseCorpTaxTotal=Math.round(leaseCorpTaxAnnual*years);
+    const leaseRentTotal=Math.round(leaseMonthTax*months);
+    const leaseGrossTotal=deposit+leaseRentTotal;
+    const leaseDisplayTotal=true ? Math.max(0,Math.round(leaseGrossTotal-leaseVatTotal-leaseCorpTaxTotal)) : leaseGrossTotal;
+    const keepVsCash=Math.max(0,(deal+firstInsurance+annualTax)-deposit);
+    const keepVsLoan=Math.max(0,(downPayment+firstInsurance+annualTax)-deposit);
+
+    const cashTotal=deal+insuranceTotal+taxTotal;
+    const loanTotal=downPayment+loanTotalPaid+insuranceTotal+taxTotal;
+    const cashAvgMonth=Math.round(cashTotal/months);
+    const loanAvgMonth=Math.round(loanTotal/months);
+    const leaseAvgMonth=Math.round(leaseDisplayTotal/months);
+
+    const etfRate=Math.max(0,num(q('etfRate').value));
+    const investPrincipal=keepVsCash;
+    const investFutureValue=Math.round(investPrincipal*Math.pow(1+etfRate/100,years));
+    const investGain=Math.max(0,investFutureValue-investPrincipal);
+
+    document.title="\u4f01\u696d\u7528\u8eca\u600e\u9ebc\u9078\u66f4\u9069\u5408\uff5c\u76f4\u63a5\u770b\u61c2\u73fe\u91d1 vs \u8cb8\u6b3e vs \u79df\u8cc3\uff5c"+yearsText;
+    setText('heroTitle',"\u4f01\u696d\u7528\u8eca\u600e\u9ebc\u9078\u66f4\u9069\u5408\uff5c\u76f4\u63a5\u770b\u61c2\u73fe\u91d1 vs \u8cb8\u6b3e vs \u79df\u8cc3\uff5c"+yearsText);
+    setText('focusYearsText',yearsText+'一起看');
+
+    setText('upfrontCashTotal',fmt(deal+firstInsurance+annualTax));
+    setText('upfrontCashDeal',fmt(deal)); setText('upfrontCashIns',fmt(firstInsurance)); setText('upfrontCashTax',fmt(annualTax));
+    setText('upfrontLoanTotal',fmt(downPayment+firstInsurance+annualTax));
+    setText('upfrontLoanDown',fmt(downPayment)); setText('upfrontLoanIns',fmt(firstInsurance)); setText('upfrontLoanTax',fmt(annualTax));
+    setText('upfrontLeaseTotal',fmt(deposit)); setText('upfrontLeaseDeposit',fmt(deposit));
+
+    setText('cashMonthLoad',fmt(cashMonthLoad));
+    setText('cashMonthNote','現金沒有車貸月付；這裡只是把保險和牌照稅與燃料稅平均後，幫你抓大概感受，約 '+fmt(cashMonthLoad)+' / 月。');
+    setText('loanMonthLoad',fmt(loanMonthLoad));
+    setText('loanMonthNote','每月貸款還款約 '+fmt(loanMonthlyRound)+'，再加上每月平均保險約 '+fmt(insuranceMonth)+' 與每月平均稅費約 '+fmt(taxMonth)+'，這樣才比較接近真實月感受。');
+    setText('leaseMonthDisplay',fmt(leaseMonthTax));
+    setText('leaseMonthDisplayNote','現在看到的就是固定月租；和貸款相比，你不用先把還款、保險、稅費自己再一層一層拼起來看。');
+    setText('outKnownMonthly',fmt(vehicleMonth+insuranceMonth+taxMonth));
+    setText('outKnownMonthlyNote','車價扣除保證金平均每月約 '+fmt(vehicleMonth)+'，每月保險約 '+fmt(insuranceMonth)+'，每月牌照稅與燃料稅（養路費）約 '+fmt(taxMonth)+'。');
+    setText('loanMonthPay',fmt(loanMonthlyRound));
+    setText('loanMonthPayNote','每月貸款還款約 '+fmt(loanMonthlyRound)+'；再加上保險與稅費，就是每月整體負擔參考。');
+
+    setText('cashHeading',yearsText+'現金購入'); setText('cashInsuranceLabel',yearsText+'保險'); setText('cashTaxLabel',yearsText+'牌照稅＋燃料稅');
+    setText('cashTotal',fmt(cashTotal)); setText('cashDeal',fmt(deal)); setText('cashInsurance',fmt(insuranceTotal)); setText('cashTax',fmt(taxTotal)); setText('cashAvgMonth',fmt(cashAvgMonth));
+
+    setText('loanHeading',yearsText+'貸款購入'); setText('loanPrincipalLabel','貸款本金'); setText('loanInterestLabel','總利息');
+    setText('loanTotal',fmt(loanTotal)); setText('loanDownPayment',fmt(downPayment)); setText('loanPrincipal',fmt(loanPrincipal)); setText('loanInterest',fmt(loanInterest)); setText('loanAvgMonth',fmt(loanAvgMonth));
+
+    setText('leaseHeading',yearsText+'租賃方案'); setText('leaseRentLabel',yearsText+'月租金總額');
+    setText('leaseTotalDisplay',fmt(leaseDisplayTotal)); setText('leaseDeposit',fmt(deposit)); setText('leaseRentTotal',fmt(leaseRentTotal)); setText('leaseAvgMonth',fmt(leaseAvgMonth));
+    setText('leaseVatTotal',fmt(leaseVatTotal)); setText('leaseCorpTaxTotal',fmt(leaseCorpTaxTotal));
+
+    const optionsArr=[{name:'現金購入', total:cashTotal}, {name:'貸款購入', total:loanTotal}, {name:'租賃方案', total:leaseDisplayTotal}].sort((a,b)=>a.total-b.total);
+    const best=optionsArr[0], second=optionsArr[1];
+    setText('diffTitle',yearsText+'整體比較');
+    setText('diffTotal',best.name+' 相對較低 '+fmt(second.total-best.total));
+    setText('diffText','把 '+yearsText+' 拉長來看，三種方式的差異會更清楚：現金最直接，貸款是折衷，而租賃最有優勢的地方，是把現金壓力和每月安排一起顧到。');
+    setText('diffTextTax',"\u5982\u679c\u4f60\u662f\u516c\u53f8\u6236\uff0c\u9019\u88e1\u4e5f\u6703\u4e00\u8d77\u986f\u793a\u767c\u7968\u8207\u7a05\u52d9\u53c3\u8003\u3002");
+
+    setText('investFutureValue',fmt(investFutureValue)); setText('investPrincipal',fmt(investPrincipal)); setText('investYears',yearsText); setText('investRate',etfRate.toFixed(1).replace('.0','')+'%'); setText('investGain',fmt(investGain));
+
+    setText('outDeal',fmt(deal)); setText('outDealNote','車價 '+fmt(sale)+'，加上配備 '+fmt(options)+'，再扣掉折讓 '+fmt(discount)+'。');
+    setText('outDeposit',fmt(deposit)); setText('outDepositNote','保證金與貸款頭款都用同一套邏輯：依年數比例抓，數字抓整萬比較好懂。');
+    setText('outLicense',fmt(annualLicense)); setText('outLicenseNote','依 '+q('licenseType').value+' 與 '+(cc?cc.toLocaleString('zh-TW'):0)+' cc 帶入。');
+    setText('outRoad',fmt(annualRoad)); setText('outRoadNote','依 '+q('roadType').value+'、'+fuel+' 與 '+(cc?cc.toLocaleString('zh-TW'):0)+' cc 帶入。');
+    setText('outVehicleMonth',fmt(vehicleMonth)); setText('outVehicleMonthNote','用車輛成交金額 '+fmt(deal)+' 扣掉保證金 '+fmt(deposit)+'，再除以 '+months+' 個月。');
+    setText('outInsTitle',yearsText+'保險估算'); setText('outInsTotal',fmt(insuranceTotal)); setText('outInsNote','用首年保費 '+fmt(firstInsurance)+' 乘上 '+yearsText+' 估整段期間的保險。');
+    setText('outTaxTitle',yearsText+'牌照稅＋燃料稅（養路費）'); setText('outTaxTotal',fmt(taxTotal)); setText('outTaxNote','把一年牌照稅與一年燃料稅（養路費）加總後，再乘上 '+yearsText+'。');
+    setText('detailLoanMonth',fmt(loanMonthlyRound)); setText('detailLoanMonthNote','貸款本金 '+fmt(loanPrincipal)+'，年利率 '+loanRate.toFixed(1).replace('.0','')+'%，'+months+' 期本息平均攤還。');
+    setText('detailLoanInterest',fmt(loanInterest)); setText('detailLoanInterestNote','每月還款 × '+months+' 期，再扣掉貸款本金。');
+
+    setText('leaseMonthUntax',fmt(leaseMonthUntax)); setText('leaseVatMonthTotal',fmt(leaseVatTotal)); setText('leaseCorpTaxAnnual',fmt(leaseCorpTaxAnnual)); setText('leaseCorpTaxPeriod',fmt(leaseCorpTaxTotal));
+    setText('leaseCorpTaxPeriodTitle',"\u79df\u671f\u5167\u53ef\u80fd\u6298\u62b5 20% \u71df\u6240\u7a05");
+
+    setText('sumUpfrontTitle','租賃最大的第一個優勢，就是今天不用先拿那麼多現金。');
+    setText('sumUpfrontText','和現金購入相比，現在可先保留 '+fmt(keepVsCash)+'；和貸款購入相比，也可先保留 '+fmt(keepVsLoan)+'。租賃先看保證金，最容易把大筆現金先留在自己手上。');
+    setText('sumMonthlyTitle','租賃把用車拆成每月安排，感受會更直覺。');
+    setText('sumMonthlyText','現在看到的含稅月租金是 '+fmt(leaseMonthTax)+'。如果你只看貸款月付款，貸款當然會比較低；但把每月還款、保險和稅費一起看，租賃通常會更接近真實用車感受，也更容易安排。');
+    setText('sumPeriodTitle','把時間拉長來看，租賃不是只看車價，而是看整段用車安排。');
+    setText('sumPeriodText',"\u62c9\u5230\u6574\u6bb5\u671f\u9593\u4f86\u770b\uff0c\u73fe\u91d1\u6700\u76f4\u63a5\u3001\u8cb8\u6b3e\u662f\u6298\u8877\u3001\u79df\u8cc3\u66f4\u6703\u5b89\u6392\u3002\u5c24\u5176\u4f01\u696d\u7528\u8eca\uff0c\u9084\u53ef\u4ee5\u518d\u591a\u770b\u4e00\u5c64\u767c\u7968\u8207\u7a05\u52d9\u53c3\u8003\u3002");
+    setText('sumInvestTitle','租賃的重點，不只是少一點壓力，而是把資金留在更有機會創造價值的地方。');
+    setText('sumInvestText','如果把和現金購入相比可先保留的 '+fmt(investPrincipal)+'，用 0050 年化 '+etfRate.toFixed(1).replace('.0','')+'% 做 '+yearsText+' 示意，可能增加的收益約 '+fmt(investGain)+'。這不是保證報酬，而是讓你看見：租賃不只是在當下比較輕鬆，也代表資金還有更多安排空間。');
+    setText('sumEndTitle','租賃不是用完就結束，期滿後也有安排。');
+    setText('sumEndText','期滿後可由第三人買回，價格原則上以保證金為基準；實際仍以正式報價、合約內容與作業方式為準。這代表租賃不是只有使用權，而是把前面的用車安排和後面的處理方式，一起規劃好。');
+
+    q('remarkBox').innerHTML='<b>補充提醒</b><br>'+q('remark').value.replace(/\n/g,'<br>')+'<br>本頁比較以車價、保證金 / 頭款、保險、牌照稅、燃料稅（養路費）、月租、貸款與'+("\u516c\u53f8\u6236\u53c3\u8003")+'為主；其他如保養、維修、停車、過路、油電等，依實際使用情況另計。';
+    setText('status','已完成計算');
+  }catch(err){ console.error(err); setText('status','計算時發生錯誤，請重新輸入'); }
+}
+
+function resetForm(){
+  q('model').value=''; q('years').value='5'; q('salePrice').value=''; q('optionsPrice').value=''; q('discountPrice').value='';
+  q('cc').value=''; q('fuel').value='汽油'; q('licenseType').value='自用小客車'; q('roadType').value='自用小客車';
+  q('firstInsurance').value=''; q('leaseMonthTax').value=''; q('loanRate').value='3.5'; q('etfRate').value='8';
+  q('remark').value='例如：實際條件依正式報價單與合約內容為準';
+  clearOutputs();
+}
+
+document.addEventListener('DOMContentLoaded', calculate);
+window.onload=calculate;
+</script>
+</body>
+</html>
